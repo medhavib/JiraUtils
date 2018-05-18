@@ -1,0 +1,9 @@
+{
+    "auth":{
+        "username":"",
+        "password":""
+    },
+    "queryadd":"fixVersion in ()",
+    "domain":"https://:8085/jira",
+    "columns":["key_epic", "story_link"]
+}
