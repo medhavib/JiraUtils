@@ -5,8 +5,6 @@ import xlsxwriter
 
 import json
 
-domain = 'https://agile.vignetcorp.com:8085/jira'
-
 with open('jira.json') as json_data_file:
     data = json.load(json_data_file)
     username = data['auth']['username']
