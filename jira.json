@@ -3,7 +3,16 @@
         "username":"",
         "password":""
     },
-    "queryadd":"fixVersion in ()",
-    "domain":"https://:8085/jira",
-    "columns":["key_epic", "story_link"]
+    "storyqueryadd":"createdDate >= 2018-01-01 AND project = XXX AND status not in (\"Ready for Estimation\", \"In Analysis\", \"In UI/UX\", Open) and Sprint is not EMPTY and resolution != \"Not Needed\" and team not in ()",
+    "epicqueryadd":"createdDate >= 2018-01-01 AND project = XXX",
+    "bugqueryadd":"project = XXX AND createdDate >= 2018-04-01 AND team != XXX",
+    "domain":"https://XXX:8085/jira",
+    "fields":["Epic Link", "key", "affectsVersions", "fixVersions", "Platform", "Epic Name", "summary", "status", "Story Points", "Rank" ,"comment",
+      "Sprint", "Priority", "Team", "description", "reporter", "issuelinks", "created", "resolution"],
+    "columns":["key_epic", "story_link", "fixVersions_story", "Platform_story", "Epic Name", "summary_story", "status_story", "Story Points",
+    	"textinfo", "Rank_story", "Sprint_story", "Priority_story", "Team_story", "Valid AC", "reporter_story",
+      "Approval Set To Date", "Approval Set By", "Closed Set To Date", "Closed Set By", "Code Review Set To Date", "Code Review Set By",
+      "In Progress Set To Date", "In Progress Set By", "In UI/UX Set To Date", "In UI/UX Set By", "Open Set To Date", "Open Set By",
+      "Ready for Estimation Set To Date", "Ready for Estimation Set By", "Testing Set To Date", "Testing Set By"],
+      "outfile":"xxxx.xlsx"
 }
